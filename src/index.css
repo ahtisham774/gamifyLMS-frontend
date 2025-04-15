@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+
+  body {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+    min-height: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary-400 text-neutral-900 hover:bg-secondary-500 focus:ring-secondary-400;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-400 text-white hover:bg-accent-500 focus:ring-accent-400;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-primary-50 focus:ring-primary-500;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-neutral-100 text-neutral-700 focus:ring-neutral-400;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-md overflow-hidden;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-100 text-primary-800;
+  }
+
+  .badge-secondary {
+    @apply badge bg-secondary-100 text-secondary-800;
+  }
+
+  .badge-accent {
+    @apply badge bg-accent-100 text-accent-800;
+  }
+
+  .badge-success {
+    @apply badge bg-success-100 text-success-800;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning-100 text-warning-800;
+  }
+
+  .badge-error {
+    @apply badge bg-error-100 text-error-800;
+  }
+}
+
+/* Custom animations */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Game elements */
+.game-card {
+  @apply card p-6 border-2 border-primary-200 hover:border-primary-400 transition-colors cursor-pointer;
+}
+
+.game-button {
+  @apply btn-primary btn-lg rounded-xl transform transition-transform hover:scale-105 active:scale-95;
+}
+
+.reward-badge {
+  @apply relative inline-block;
+}
+
+.reward-badge::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full blur opacity-50;
+  z-index: -1;
+}
+
+/* Quiz elements */
+.quiz-option {
+  @apply relative p-4 border-2 border-neutral-200 rounded-xl cursor-pointer transition-all;
+}
+
+.quiz-option.selected {
+  @apply border-primary-500 bg-primary-50;
+}
+
+.quiz-option.correct {
+  @apply border-success-500 bg-success-50;
+}
+
+.quiz-option.incorrect {
+  @apply border-error-500 bg-error-50;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-400;
+}
