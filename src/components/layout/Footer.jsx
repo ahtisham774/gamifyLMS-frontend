@@ -69,12 +69,12 @@ const Footer = () => {
             <ul className="mt-4 space-y-2">
               <li className="text-neutral-300">
                 <a href="mailto:info@GamifyLMS.com" className="hover:text-white">
-                  info@GamifyLMS.com
+                caritamorrisl@gmail.com
                 </a>
               </li>
               <li className="text-neutral-300">
                 <a href="tel:+11234567890" className="hover:text-white">
-                  +1 (123) 456-7890
+                +592-721-6054
                 </a>
               </li>
             </ul>
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-8 pt-8 border-t border-neutral-700">
           <p className="text-sm text-neutral-400 text-center">
-            &copy; {currentYear} Gamify LMS. All rights reserved.
+            &copy; {currentYear} Carita Morris - Final Year Project CSE4200.
           </p>
         </div>
       </div>

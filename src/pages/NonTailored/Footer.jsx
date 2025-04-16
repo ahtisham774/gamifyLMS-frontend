@@ -71,7 +71,7 @@ const BottomFooter = () => {
                   href='mailto:support@gamifyLMS.com'
                   className='hover:text-indigo-600 transition-colors'
                 >
-                  support@gamifyLMS.com
+                 caritamorrisl@gmail.com
                 </a>
               </li>
               <li className='flex items-center text-gray-600 text-sm'>
@@ -80,7 +80,7 @@ const BottomFooter = () => {
                   href='tel:+1234567890'
                   className='hover:text-indigo-600 transition-colors'
                 >
-                  (123) 456-7890
+                 +592-721-6054
                 </a>
               </li>
             </ul>
@@ -89,7 +89,7 @@ const BottomFooter = () => {
 
         <div className='border-t border-indigo-100 mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center'>
           <p className='text-gray-600 text-sm'>
-            &copy; {currentYear} Gamify LMS. All rights reserved.
+            &copy; {currentYear} Carita Morris - Final Year Project CSE4200.
           </p>
 
           <div className='flex space-x-6 mt-4 sm:mt-0'>
