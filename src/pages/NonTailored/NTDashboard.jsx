@@ -26,13 +26,13 @@ const NTDashboard = () => {
         // Fetch enrolled courses
         const coursesResponse = await api.get('/courses/enrolled')
         if (coursesResponse.data.success) {
-          setEnrolledCourses(coursesResponse.data.enrolledCourses)
+          setEnrolledCourses(coursesResponse.data.enrolledCourses?.filter(course=> course?.course != null))
         }
 
         // Fetch recent quiz attempts
         const attemptsResponse = await api.get('/attempts')
         if (attemptsResponse.data.success) {
-          setRecentAttempts(attemptsResponse.data.attempts?.slice(0, 5) || [])
+          setRecentAttempts(attemptsResponse.data.attempts?.filter(item=>item?.course != null)?.slice(0, 5) || [])
         }
       } catch (error) {
         console.error('Error fetching student data:', error)

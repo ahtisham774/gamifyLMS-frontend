@@ -66,7 +66,7 @@ const LearnCourse = () => {
           const enrolledResponse = await api.get('/courses/enrolled')
           if (enrolledResponse.data.success) {
             const enrollment = enrolledResponse.data.enrolledCourses.find(
-              e => e.course._id === id
+              e => e?.course?._id === id
             )
             if (enrollment) {
               setCompletedLessons(enrollment.completedLessons || [])

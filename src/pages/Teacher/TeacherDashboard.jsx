@@ -330,12 +330,12 @@ const fetchCourses = async () => {
                         >
                           <TrashIcon className="h-5 w-5" />
                         </button>
-                        <Link
-                          to={`/courses/${course._id}`}
+                        <button
+                          
                           className="p-2 bg-white rounded-full shadow-md hover:bg-green-100 text-green-600 transition-colors"
                         >
                           <EyeIcon className="h-5 w-5" />
-                        </Link>
+                        </button>
                       </div>
                     </div>
                     

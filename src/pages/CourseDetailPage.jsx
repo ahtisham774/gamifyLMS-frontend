@@ -49,14 +49,14 @@ const CourseDetailPage = () => {
           const enrolledResponse = await api.get('/courses/enrolled')
           if (enrolledResponse.data.success) {
             const enrolled = enrolledResponse.data.enrolledCourses.some(
-              enrollment => enrollment.course._id === id
+              enrollment => enrollment?.course?._id === id
             )
             setIsEnrolled(enrolled)
 
             // Get completed lessons if enrolled
             if (enrolled) {
               const enrollment = enrolledResponse.data.enrolledCourses.find(
-                e => e.course._id === id
+                e => e?.course?._id === id
               )
               console.log('enrollment:', enrollment)
               console.log("completed lessons:", enrollment?.course?.units?.flatMap(unit => unit?.lessons?.filter(lesson => lesson.isCompleted && lesson?.completedBy && lesson?.completedBy.includes(user._id))))

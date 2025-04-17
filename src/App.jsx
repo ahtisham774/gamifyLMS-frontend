@@ -28,21 +28,16 @@ import CourseForm from './pages/Teacher/CourseForm'
 import CourseManagement from './pages/Teacher/CourseManagement'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-  const { user } = useAuth()
+
+  const { user, loading } = useAuth()
   const location = useLocation()
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
-    return () => clearTimeout(timer)
-  }, [])
+  
 
   const isAuthRoute = ['/login', '/register'].includes(location.pathname)
   const isTailored = user?.preferences?.learningApproach === 'tailored'
 
-  if (isLoading) {
+  if (loading) {
     return <LoadingSpinner fullScreen />
   }
 

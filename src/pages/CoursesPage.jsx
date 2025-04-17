@@ -628,7 +628,7 @@ const CoursesPage = () => {
           
           if (enrolledResponse.data.success) {
             const enrolledIds = enrolledResponse.data.enrolledCourses.map(
-              enrollment => enrollment.course._id
+              enrollment => enrollment?.course?._id
             );
             setEnrolledCourseIds(enrolledIds);
           }

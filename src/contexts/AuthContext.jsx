@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
 
       // Fetch user profile
       const response = await api.get('/auth/profile')
-
+      
       if (response.data.success) {
         setUser(response.data.user)
       } else {

@@ -48,25 +48,25 @@ const CourseView = () => {
         if (user) {
           const enrolledResponse = await api.get('/courses/enrolled')
           if (enrolledResponse.data.success) {
-            const enrolled = enrolledResponse.data.enrolledCourses.some(
-              enrollment => enrollment.course._id === id
+            const enrolled = enrolledResponse.data?.enrolledCourses?.some(
+              enrollment => enrollment?.course?._id === id
             )
             setIsEnrolled(enrolled)
 
             // Get completed lessons if enrolled
             if (enrolled) {
               const enrollment = enrolledResponse.data.enrolledCourses.find(
-                e => e.course._id === id
+                e => e?.course?._id === id
               )
 
               setCompletedLessons(
                 enrollment?.completedLessons ||
-                  enrollment.course.units.flatMap(unit =>
+                  enrollment.course?.units?.flatMap(unit =>
                     unit.lessons
                       .filter(
                         lesson =>
                           lesson.isCompleted &&
-                          lesson.completedBy.includes(user?._id)
+                          lesson?.completedBy?.includes(user?._id)
                       )
                       .map(lesson => lesson._id)
                   ) ||

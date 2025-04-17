@@ -81,7 +81,7 @@ const Courses = () => {
 
           if (enrolledResponse.data.success) {
             const enrolledIds = enrolledResponse.data.enrolledCourses.map(
-              enrollment => enrollment.course._id
+              enrollment => enrollment?.course?._id
             )
             setEnrolledCourseIds(enrolledIds)
           }
@@ -178,7 +178,7 @@ const Courses = () => {
     return badges[level] || 'bg-gray-100 text-gray-800 border-gray-200'
   }
 
-  const filteredCourses = courses.filter(course => {
+  const filteredCourses = courses?.filter(course => {
     const matchesSearch =
       !searchTerm ||
       course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
