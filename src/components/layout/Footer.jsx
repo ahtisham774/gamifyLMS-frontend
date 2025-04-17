@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-8 pt-8 border-t border-neutral-700">
           <p className="text-sm text-neutral-400 text-center">
-            &copy; {currentYear} Carita Morris - Final Year Project CSE.
+            &copy; {currentYear} Carita Morris - Final Year Project.
           </p>
         </div>
       </div>
