@@ -48,19 +48,7 @@ const Index = () => {
       name: 'Social Studies',
       case: 'social',
     },
-    {
-      name: 'Art',
-      case: 'art',
-    },
-    {
-      name: 'Music',
-      case: 'music',
-    },
-    {
-      name: 'Physical Education',
-      case: 'physical-education',
-    },
-
+  
   ]
 
 
@@ -128,7 +116,7 @@ const Index = () => {
           </div>
 
           <div className='p-8'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
               <div className='flex flex-col items-center text-center p-6 rounded-lg bg-neutral-50'>
                 <div className='bg-primary-100 p-4 rounded-full mb-4'>
                   <svg
@@ -203,7 +191,7 @@ const Index = () => {
                   and statistics.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className='mt-12 border-t border-neutral-200 pt-8'>
               <h2 className='text-2xl font-bold mb-6 text-center'>

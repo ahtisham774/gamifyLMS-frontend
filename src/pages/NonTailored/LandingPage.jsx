@@ -62,7 +62,7 @@ const LandingPage = () => {
         </div>
         
         {/* Features Section */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">Why Learn With Us?</h2>
           <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
             Our platform offers the best learning experience with interactive courses and expert instructors.
@@ -99,7 +99,7 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         
         {/* Popular Topics */}
         <div className="mb-16">
@@ -125,18 +125,7 @@ const LandingPage = () => {
               <GlobeAltIcon className="h-4 w-4 mr-1 text-indigo-600" />
               Social Studies
             </span>
-            <span className="flex items-center px-4 py-2 bg-white border border-indigo-100 rounded-full text-sm font-medium hover:bg-indigo-50 cursor-pointer transition-colors">
-              <CodeBracketIcon className="h-4 w-4 mr-1 text-indigo-600" />
-              Programming
-            </span>
-            <span className="flex items-center px-4 py-2 bg-white border border-indigo-100 rounded-full text-sm font-medium hover:bg-indigo-50 cursor-pointer transition-colors">
-              <PaintBrushIcon className="h-4 w-4 mr-1 text-indigo-600" />
-              Art
-            </span>
-            <span className="flex items-center px-4 py-2 bg-white border border-indigo-100 rounded-full text-sm font-medium hover:bg-indigo-50 cursor-pointer transition-colors">
-              <MusicalNoteIcon className="h-4 w-4 mr-1 text-indigo-600" />
-              Music
-            </span>
+          
           </div>
           
           <div className="text-center">
@@ -150,7 +139,7 @@ const LandingPage = () => {
         </div>
 
         {/* Testimonials or Stats Section */}
-        <div className="bg-white rounded-2xl shadow-xl border border-indigo-100 p-8 mb-12">
+        {/* <div className="bg-white rounded-2xl shadow-xl border border-indigo-100 p-8 mb-12">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">Join Our Learning Community</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -166,7 +155,7 @@ const LandingPage = () => {
               <div className="text-gray-600">Satisfaction Rate</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
