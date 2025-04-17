@@ -89,7 +89,7 @@ const BottomFooter = () => {
 
         <div className='border-t border-indigo-100 mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center'>
           <p className='text-gray-600 text-sm'>
-            &copy; {currentYear} Carita Morris - Final Year Project CSE4200.
+            &copy; {currentYear} Carita Morris - Final Year Project CSE.
           </p>
 
           <div className='flex space-x-6 mt-4 sm:mt-0'>
