@@ -68,12 +68,12 @@ const Footer = () => {
             <h3 className="text-sm font-bold uppercase tracking-wider text-neutral-400">Contact</h3>
             <ul className="mt-4 space-y-2">
               <li className="text-neutral-300">
-                <a href="mailto:info@GamifyLMS.com" className="hover:text-white">
-                caritamorrisl@gmail.com
+                <a href="mailto:caritamorris7@gmail.com" className="hover:text-white">
+                caritamorris7@gmail.com
                 </a>
               </li>
               <li className="text-neutral-300">
-                <a href="tel:+11234567890" className="hover:text-white">
+                <a href="tel:+5927216054" className="hover:text-white">
                 +592-721-6054
                 </a>
               </li>

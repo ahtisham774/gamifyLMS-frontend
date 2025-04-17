@@ -68,16 +68,16 @@ const BottomFooter = () => {
               <li className='flex items-center text-gray-600 text-sm'>
                 <EnvelopeIcon className='h-4 w-4 mr-2 text-indigo-600' />
                 <a
-                  href='mailto:support@gamifyLMS.com'
+                  href='mailto:caritamorris7@gmail.com'
                   className='hover:text-indigo-600 transition-colors'
                 >
-                 caritamorrisl@gmail.com
+                 caritamorris7@gmail.com
                 </a>
               </li>
               <li className='flex items-center text-gray-600 text-sm'>
                 <PhoneIcon className='h-4 w-4 mr-2 text-indigo-600' />
                 <a
-                  href='tel:+1234567890'
+                  href='tel:+5927216054'
                   className='hover:text-indigo-600 transition-colors'
                 >
                  +592-721-6054
